@@ -1,0 +1,160 @@
+// Global Foundation Settings
+@import "settings";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+
+
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+// @import "foundation/components/global"; // *always required
+// @import "foundation/components/grid";
+// @import "foundation/components/visibility";
+// @import "foundation/components/block-grid";
+// @import "foundation/components/type";
+// @import "foundation/components/buttons";
+// @import "foundation/components/forms"; // *requires components/buttons
+// @import "foundation/components/custom-forms"; // *requires components/buttons, components/forms
+// @import "foundation/components/button-groups"; // *requires components/buttons
+// @import "foundation/components/dropdown-buttons"; // *requires components/buttons
+// @import "foundation/components/split-buttons"; // *requires components/buttons
+// @import "foundation/components/flex-video";
+// @import "foundation/components/section";
+// @import "foundation/components/top-bar";  // *requires components/grid
+// @import "foundation/components/orbit";
+// @import "foundation/components/reveal";
+// @import "foundation/components/joyride";
+// @import "foundation/components/clearing";
+// @import "foundation/components/alert-boxes";
+// @import "foundation/components/breadcrumbs";
+// @import "foundation/components/keystrokes";
+// @import "foundation/components/labels";
+// @import "foundation/components/inline-lists";
+// @import "foundation/components/pagination";
+// @import "foundation/components/panels";
+// @import "foundation/components/pricing-tables";
+// @import "foundation/components/progress-bars";
+// @import "foundation/components/side-nav";
+// @import "foundation/components/sub-nav";
+// @import "foundation/components/switch";
+// @import "foundation/components/magellan";
+// @import "foundation/components/tables";
+// @import "foundation/components/thumbs";
+// @import "foundation/components/tooltips";
+// @import "foundation/components/dropdown";
+
+@font-face {
+    font-family: 'hobostd';
+    src: url('hobostd/hobostd.eot');
+    src: url('hobostd/hobostd.svg');
+    src: url('hobostd/hobostd.ttf');
+    src: url('hobostd/hobostd.woff');
+}
+
+$title-color: #CE4726;
+
+ 
+    header.row {
+        margin-top: emCalc(30px);
+         margin-bottom: emCalc(30px);
+         padding-bottom: emCalc(5px);
+         padding-top: emCalc(15px);
+
+         blockquote {
+            padding-top: emCalc(20px);
+         }
+     }
+
+.row {
+        // margin-bottom: emCalc(50px);
+    
+
+}
+
+#edito h3 {
+    //color: $title-color;
+    margin-bottom: 0px;
+}
+
+#breves h3, #agenda h3 {
+    //color: $title-color;
+}
+
+h4 a, h4 a:hover {
+    color: $title-color;
+  //  text-decoration: underline;
+}
+
+h3 {
+    a {
+        color: black;
+        padding-bottom: 0px;
+    }
+    a:hover {
+        color:black;
+        text-decoration: underline;
+    }
+}
+h4{
+   
+        color: $title-color;
+    
+}
+
+article {
+    text-align: justify;
+}
+
+aside {
+    ul {
+        list-style: none;
+    }
+}
+
+.row {
+    background-color: white;
+}
+
+/* Docs Footer Styles */
+
+.full-width {
+    margin-top: emCalc(25px);
+    background-color: #F8F8F8;
+    border-top: solid 1px #dddd;
+    max-width: 100%;
+        footer.row {
+            padding-top: 30px;
+            font-size: 14px;
+        }
+        footer {
+            .row {
+                padding-top: 30px;
+                background-color: #F8F8F8;
+            }
+            ul {
+                list-style: none;
+                text-align: normal;
+            }
+        }
+}
+
+@media #{$medium} { 
+.center {
+    text-align: center;
+}
+}
+
+.fixed-bottom {
+  margin-top: 40px;
+}
+
+.top-bar .name h1 a {
+    color: $title-color;
+    font-family: 'hobostd';
+}
+
+.breadcrumbs { @include crumb-container; 
+    margin-top: emCalc(15px);
+}
