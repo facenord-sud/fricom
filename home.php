@@ -25,7 +25,6 @@ get_header();
                     ?>
                     <h4>Edito</h4>
                     <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
-                    <h5>Par : <?php the_author() ?></h5>
                     <article ><?php the_content('(lire la suite)'); ?></article>
                 <?php endwhile;
                 ?> 
@@ -59,7 +58,7 @@ get_header();
                     while (have_posts()) : the_post();
                         ?>
                         <p>
-                            <h5><a href="<?php the_permalink() ?>"><?php the_title(); ?> &rarr;</a></h5>
+                            <h5><a href="<?php the_permalink() ?>">&rarr; <?php the_title(); ?> </a></h5>
                         </p>
                     <?php
                     endwhile;
@@ -75,15 +74,16 @@ get_header();
                 while (have_posts()) : the_post();
                     ?>
                     <p>
-                        <h5><a href="<?php the_permalink() ?>"><?php
+                        <h5><a href="<?php the_permalink() ?>">&rarr; <?php
                         echo get_the_excerpt().'<br/>';
-                         the_title(); ?> &rarr;</a></h5>
+                         the_title(); ?></a></h5>
                     </p>
                 <?php
                 endwhile;
                 ?>
             </fieldset>
             </div>
+            <h4>Les derniers tweets</h4>
             <div id="tweet">
                 <a class="twitter-timeline" href="https://twitter.com/RedactionFricom" data-widget-id="334930436893589504">Tweets di @RedactionFricom</a>
                 <script>

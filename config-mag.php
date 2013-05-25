@@ -7,7 +7,8 @@ function get_cat_by_id($name) {
         'breve' => 5,
         'bon-plans' =>4,
         'culture' => 6,
-        'dossier' => 7
+        'dossier' => 7,
+        'video' => 36,
         
     );
     return $categories[$name];
