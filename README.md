@@ -17,6 +17,10 @@ pour modifier l'affichege des articles index.php
 
 pour modifier l'affichage des articles par tags -> tag.php
 
-pour modifier le footer footer.php
+pour modifier le footer -> footer.php
 
 pour modifier la page d'erreur non trouvée -> 404.php
+
+pour modifier le css -> http://foundation.zurb.com
+                      -> compass
+                      sass
