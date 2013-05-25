@@ -22,5 +22,4 @@ pour modifier le footer -> footer.php
 pour modifier la page d'erreur non trouvée -> 404.php
 
 pour modifier le css -> http://foundation.zurb.com
-                      -> compass
-                      sass
+                      -> compas et sass
