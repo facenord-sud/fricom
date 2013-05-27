@@ -5,12 +5,16 @@
       <div class="large-5 columns">
         <h6><strong>Réalisé pour le cour projet multimédia</strong></h6>
         <ul>
-        <li>Ce site a été réalisé dans le cadre du projet multimédia de la faculté des <a href="http://www.zurb.com/">Sciences économiques et Soicale</a>
-            de l'<a href="http://foundation.zurb.com/about.php">Université de Fribourg</a>.
+        <li>Ce site a été réalisé dans le cadre du projet multimédia de la faculté des <a href="http://www.unifr.ch/ses">Sciences économiques et Soicale</a>
+            de l'<a href="http://www.unifr.ch">Université de Fribourg</a>.
             </li>
-            <li>Désirez-vous <a href="#">connaître l'équipe</a> ?
+            <li>
+                Désirez-vous <a href="<?php echo get_site_url().'?author=1';?>">connaître l'équipe</a> ?
             </li>
            <li> Des questions, des remarques ? <a href="mailto:freecom@gmail.com">Contactez-nous &rarr;</a>
+        </li>
+        <li>
+          le PDF du projet se trouve <a href="<?php echo get_template_directory_uri().'/docs/projet_multimedia.pdf';?>">ici<a>
         </li>
       </ul>
       </div>
@@ -23,9 +27,12 @@
       <div class="large-4 columns">
         <h6><strong>Suivez-nous sur les réseaux sociaux</strong></h6>
         <ul>
-            <li>facebook</li>
-            <li>facebook</li>
-            <li>facebook</li>
+          <li>
+              <div class="fb-like-box" data-href="https://www.facebook.com/fricom.officialpage?fref=ts" data-width="292" data-show-faces="false" data-stream="false" data-show-border="true" data-header="false"></div>          </li>
+          <li>
+            <a href="https://twitter.com/RedactionFricom" class="twitter-follow-button" data-show-count="false" data-lang="fr" data-size="large">Suivre @RedactionFricom</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          </li>
         </ul>
       </div>
   </div>

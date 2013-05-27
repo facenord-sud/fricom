@@ -24,7 +24,9 @@
 
         <?php wp_get_archives('type=monthly&format=link'); ?>
         <?php //comments_popup_script(); // off by default ?>
-        <?php wp_head(); ?>
+        <?php wp_head(); 
+        $noTag=TRUE;
+        ?>
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
 
     </head>

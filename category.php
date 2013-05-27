@@ -7,7 +7,7 @@ $cat = $categories[0];
     <div class="row">
         <div class="large-9 columns">
             <?php
-            if($cat->term_id == get_cat_by_id('agenda')) {
+            if($cat->term_id == get_cat_by_id('agenda') and $noTag) {
                 require_once "agenda.php";
             } else {
                 require_once "category-content.php";
